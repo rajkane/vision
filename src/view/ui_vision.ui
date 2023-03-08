@@ -20,8 +20,8 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(61, 56, 70);
-color: rgb(192, 28, 40);</string>
+   <string notr="true">background-color: rgb(36, 31, 49);
+color: rgb(143, 240, 164);</string>
   </property>
   <property name="unifiedTitleAndToolBarOnMac">
    <bool>true</bool>
@@ -107,7 +107,7 @@ color: rgb(192, 28, 40);</string>
        </widget>
       </item>
       <item row="0" column="4">
-       <widget class="QPushButton" name="btn_gray">
+       <widget class="QPushButton" name="btn_gray_rgb">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -133,6 +133,12 @@ color: rgb(192, 28, 40);</string>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="statusTip">
+         <string>measurement ...</string>
+        </property>
         <property name="text">
          <string>Measurement</string>
         </property>
@@ -145,6 +151,12 @@ color: rgb(192, 28, 40);</string>
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="statusTip">
+         <string>machine vision ...</string>
         </property>
         <property name="text">
          <string>Machine
