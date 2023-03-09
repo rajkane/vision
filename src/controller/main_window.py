@@ -15,7 +15,7 @@ class MainWindow(qtw.QMainWindow, Ui_MainWindow):
 		self.action_running_process(on=False)
 	
 	def live_camera(self):
-		self.worker = CameraWorker(channel=-1)
+		self.worker = CameraWorker(channel=2)
 		self.worker.img_update.connect(self.update_image)
 		self.worker.enabled.connect(self.action_running_process)
 		self.worker.status.connect(self.message_status)

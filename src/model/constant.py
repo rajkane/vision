@@ -2,9 +2,9 @@ from src import *
 
 
 class Parameter:
-    SCALE = 2
-    WIDTH = 800
-    HEIGHT = 600
+    SCALE = 1
+    WIDTH = 1400
+    HEIGHT = 800
     SIZE = qtc.QSize(int(WIDTH*SCALE), int(HEIGHT*SCALE))
     KEEPRATIO = qtc.Qt.AspectRatioMode.KeepAspectRatio
     SMOOTH_TRANSFORMATION = qtc.Qt.TransformationMode.SmoothTransformation
