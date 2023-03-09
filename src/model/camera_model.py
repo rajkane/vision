@@ -23,7 +23,7 @@ class CameraWorker(qtc.QThread):
 		self.cap = cv2.VideoCapture(self.channel)
 		self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, Parameter.WIDTH)
 		self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, Parameter.HEIGHT)
-		self.cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 0.25)
+		self.cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, Parameter.AUTO_EXPOSURE)
 		
 		while self.active:
 			self.enabled.emit(True)

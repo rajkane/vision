@@ -5,6 +5,7 @@ class Parameter:
     SCALE = 1
     WIDTH = 1400
     HEIGHT = 800
+    AUTO_EXPOSURE = .25
     SIZE = qtc.QSize(int(WIDTH*SCALE), int(HEIGHT*SCALE))
     KEEPRATIO = qtc.Qt.AspectRatioMode.KeepAspectRatio
     SMOOTH_TRANSFORMATION = qtc.Qt.TransformationMode.SmoothTransformation
