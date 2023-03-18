@@ -6,11 +6,18 @@ from src import *
 def show_camera_stop(frame, on: bool):
 	if on:
 		cv2.putText(frame, "Freeze", (750, 30), cv2.FONT_HERSHEY_SIMPLEX, .7, (0, 180, 0), 2)
+	
+def	gray_camera(frame, on: bool):
+	if on:
+		cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+	else:
+		cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
 class CameraWorker(qtc.QThread):
 	img_update = qtc.pyqtSignal(qtg.QImage)
 	status = qtc.pyqtSignal(str)
 	enabled = qtc.pyqtSignal(bool)
+	gray = qtc.pyqtSignal(bool)
 	
 	def __init__(self, channel: int):
 		super(CameraWorker, self).__init__()
